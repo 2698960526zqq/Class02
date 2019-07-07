@@ -9,23 +9,51 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
     var result : float_t = 10.2
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        var ce : Int
-        ce = 1
-        let de = add(a: 1, b: 2)
-        print(de)
+//        var ce : Int
+//        ce = 1
+//        let de = add(a: 1, b: 2)
+//        print(de)
+//        print("我一定学得会 Swift")
+        //我要去超市了
+        let 如果我去超市 = true
         
-        print("我一定学得会 Swift")
+    
+        //有橘子
+        let 如果看到橘子 = true
+        
+        
+        if 如果我去超市 {
+            
+            var 买西瓜的数量 = 1
+            
+            if 如果看到橘子 {
+                买西瓜的数量 = 10
+            }
+            
+            print("我要买 : \( 买西瓜的数量 ) 颗西瓜")
+        }
+//        if ( 如果我去超市 ) {
+//
+//            var 要买几颗橘子 = 1
+//
+//
+//            if( 如果看到橘子 ){
+//
+//                要买几颗橘子 = 10
+//
+//            }
+//            print("买 \(要买几颗橘子) 颗西瓜")
+//        }
+        
+        
     }
 
-    func add(a : Int, b : Int) -> Int {
-        return a + b
-    }
+//    func add(a : Int, b : Int) -> Int {
+//        return a + b
+//    }
 }
 
