@@ -55,7 +55,7 @@
         <!--View Controller-->
         <scene sceneID="jPM-KQ-h5O">
             <objects>
-                <viewController id="CQv-jh-7z7" sceneMemberID="viewController">
+                <viewController id="CQv-jh-7z7" customClass="BViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RLv-0M-57F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,6 +79,9 @@
                                     <constraint firstAttribute="height" constant="30" id="qEE-kW-rV9"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnBClicked:" destination="CQv-jh-7z7" eventType="touchUpInside" id="ro7-TR-FJZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,6 +93,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="11L-Ky-s2Z"/>
                     </view>
+                    <connections>
+                        <outlet property="lbMMsg" destination="IAQ-hF-PWU" id="UUf-Al-hJy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ift-M4-aJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
