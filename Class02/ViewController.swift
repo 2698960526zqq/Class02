@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     
     @IBAction func btnTestClicked(_ sender: UIButton) {
         print("我按了啥？")
-        
         lbMsg.text = "我要铜锣烧"
         lbMsg.textColor = UIColor.purple
     }

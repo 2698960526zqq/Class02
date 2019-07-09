@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CQv-jh-7z7">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -80,27 +80,11 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2l-dz-cDA">
-                                <rect key="frame" x="21" y="44" width="372" height="779"/>
-                                <color key="backgroundColor" red="0.77862894837090169" green="0.81364085713075096" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="372" id="1f2-c3-wt8"/>
-                                    <constraint firstAttribute="height" constant="779" id="1uO-Qh-NkN"/>
-                                </constraints>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="l2l-dz-cDA" firstAttribute="top" secondItem="RLv-0M-57F" secondAttribute="topMargin" id="16L-T4-F80"/>
                             <constraint firstAttribute="bottomMargin" secondItem="qvn-Va-pa2" secondAttribute="bottom" constant="1" id="E49-Nl-zyn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qvn-Va-pa2" secondAttribute="trailing" constant="1" id="ZLS-xS-U4M"/>
-                            <constraint firstItem="qvn-Va-pa2" firstAttribute="top" secondItem="l2l-dz-cDA" secondAttribute="bottom" constant="8" id="cUL-vB-zr2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="l2l-dz-cDA" secondAttribute="trailing" constant="1" id="f2R-9v-9hp"/>
-                            <constraint firstItem="l2l-dz-cDA" firstAttribute="leading" secondItem="RLv-0M-57F" secondAttribute="leadingMargin" constant="1" id="grS-WJ-n4U"/>
                             <constraint firstItem="IAQ-hF-PWU" firstAttribute="leading" secondItem="RLv-0M-57F" secondAttribute="leadingMargin" constant="1" id="slr-2n-GqI"/>
                             <constraint firstAttribute="bottomMargin" secondItem="IAQ-hF-PWU" secondAttribute="bottom" constant="1" id="x3b-45-SWS"/>
                         </constraints>
