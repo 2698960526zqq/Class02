@@ -10,15 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    @IBOutlet weak var lbMsg: UILabel!
-    
-    var result : float_t = 10.2
-    
-    @IBAction func btnTestClicked(_ sender: UIButton) {
-        print("我按了啥？")
-        lbMsg.text = "我要铜锣烧"
-        lbMsg.textColor = UIColor.purple
-    }
+//    @IBOutlet weak var lbMsg: UILabel!
+//
+//    var result : float_t = 10.2
+//
+//    @IBAction func btnTestClicked(_ sender: UIButton) {
+//        print("我按了啥？")
+//        lbMsg.text = "我要铜锣烧"
+//        lbMsg.textColor = UIColor.purple
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,27 +64,21 @@ class ViewController: UIViewController {
 //
 //    func add(a : Int, b : Int) -> Int {
 //        return a + b
-        func viewDidLoad() {
-            super.viewDidLoad()
-            let worker : AsyncRequestWorker = AsyncRequestWorker()
-            
-            worker.getResponse(from: "http://baidu.com", tag: 1)
-            
-            
-            //       NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(Notification)), name: UIResponder.keyboardWillShowNotification, object: nil)
-            //
-            
-            
-            NotificationCenter.default.addObserver(self, selector:
-                #selector(keyboar dWillShow(notification:)), name:
-                NSNotification.Name("response.received"), object: nil)
-        }
-        func keyboardWillShow(notification: NSNotification){
-            
-            let idontkonw = notification.userInfo!["response"]
-            
-            print("猜猜看：\(idontkonw)")
-        }
+        
+        let worker:AsyncRequestWorker = AsyncRequestWorker()
+        
+        worker.getResponse(from: "https://google.com", tag: 1)
+        
+        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillShow(notification:)) , name: NSNotification.Name("response.received"), object: nil)
+        
+        //        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification , object:nil)
+        
+        
+    }
+    // .tencent.com
+    @objc func keyboardWillShow(notification: NSNotification) {
+        let idontknow = notification.userInfo!["response"]
+        print("猜猜看：\(idontknow)")
             
 
     }
